@@ -33,6 +33,7 @@
 		29A1F73A1EB910740014974A /* Score.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 29A1F7371EB910740014974A /* Score.mp3 */; };
 		29A1F73E1EB912310014974A /* GameplayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 29A1F73D1EB912310014974A /* GameplayScene.sks */; };
 		29A1F7411EB912AB0014974A /* GameplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A1F7401EB912AB0014974A /* GameplayScene.swift */; };
+		29FDABC71EB92C5A00CF1B03 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDABC61EB92C5A00CF1B03 /* Bird.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		29A1F7371EB910740014974A /* Score.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Score.mp3; sourceTree = "<group>"; };
 		29A1F73D1EB912310014974A /* GameplayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameplayScene.sks; sourceTree = "<group>"; };
 		29A1F7401EB912AB0014974A /* GameplayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameplayScene.swift; sourceTree = "<group>"; };
+		29FDABC61EB92C5A00CF1B03 /* Bird.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 		29A1F73C1EB911F10014974A /* Clases */ = {
 			isa = PBXGroup;
 			children = (
+				29FDABC51EB92C4700CF1B03 /* Bird Class */,
 				29A1F73F1EB912900014974A /* SceneClases */,
 			);
 			name = Clases;
@@ -252,6 +255,14 @@
 				29A1F7401EB912AB0014974A /* GameplayScene.swift */,
 			);
 			name = SceneClases;
+			sourceTree = "<group>";
+		};
+		29FDABC51EB92C4700CF1B03 /* Bird Class */ = {
+			isa = PBXGroup;
+			children = (
+				29FDABC61EB92C5A00CF1B03 /* Bird.swift */,
+			);
+			name = "Bird Class";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +422,7 @@
 			files = (
 				29A1F7411EB912AB0014974A /* GameplayScene.swift in Sources */,
 				29A1F6EA1EB90F760014974A /* GameViewController.swift in Sources */,
+				29FDABC71EB92C5A00CF1B03 /* Bird.swift in Sources */,
 				29A1F6E21EB90F760014974A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,6 +674,7 @@
 				29A1F70E1EB90F770014974A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29A1F70F1EB90F770014974A /* Build configuration list for PBXNativeTarget "flapping birdTests" */ = {
 			isa = XCConfigurationList;
@@ -670,6 +683,7 @@
 				29A1F7111EB90F770014974A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29A1F7121EB90F770014974A /* Build configuration list for PBXNativeTarget "flapping birdUITests" */ = {
 			isa = XCConfigurationList;
@@ -678,6 +692,7 @@
 				29A1F7141EB90F770014974A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
