@@ -34,6 +34,9 @@
 		29A1F73A1EB910740014974A /* Score.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 29A1F7371EB910740014974A /* Score.mp3 */; };
 		29A1F73E1EB912310014974A /* GameplayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 29A1F73D1EB912310014974A /* GameplayScene.sks */; };
 		29A1F7411EB912AB0014974A /* GameplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A1F7401EB912AB0014974A /* GameplayScene.swift */; };
+		29DB6CD51EBA297200AAD905 /* MainMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 29DB6CD41EBA297200AAD905 /* MainMenuScene.sks */; };
+		29DB6CD71EBA29A100AAD905 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DB6CD61EBA29A100AAD905 /* MainMenuScene.swift */; };
+		29DB6CDA1EBA2F1800AAD905 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DB6CD91EBA2F1800AAD905 /* GameManager.swift */; };
 		29FDABC71EB92C5A00CF1B03 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDABC61EB92C5A00CF1B03 /* Bird.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +91,9 @@
 		29A1F7371EB910740014974A /* Score.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Score.mp3; sourceTree = "<group>"; };
 		29A1F73D1EB912310014974A /* GameplayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameplayScene.sks; sourceTree = "<group>"; };
 		29A1F7401EB912AB0014974A /* GameplayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameplayScene.swift; sourceTree = "<group>"; };
+		29DB6CD41EBA297200AAD905 /* MainMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuScene.sks; sourceTree = "<group>"; };
+		29DB6CD61EBA29A100AAD905 /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		29DB6CD91EBA2F1800AAD905 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		29FDABC61EB92C5A00CF1B03 /* Bird.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -246,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				29A1F73D1EB912310014974A /* GameplayScene.sks */,
+				29DB6CD41EBA297200AAD905 /* MainMenuScene.sks */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -253,19 +260,29 @@
 		29A1F73C1EB911F10014974A /* Clases */ = {
 			isa = PBXGroup;
 			children = (
+				29DB6CD81EBA2F0200AAD905 /* Game Manager */,
 				294D63151EB9CD3F005FAFF9 /* Random Class */,
 				29FDABC51EB92C4700CF1B03 /* Bird Class */,
-				29A1F73F1EB912900014974A /* SceneClases */,
+				29A1F73F1EB912900014974A /* Scene Clases */,
 			);
 			name = Clases;
 			sourceTree = "<group>";
 		};
-		29A1F73F1EB912900014974A /* SceneClases */ = {
+		29A1F73F1EB912900014974A /* Scene Clases */ = {
 			isa = PBXGroup;
 			children = (
 				29A1F7401EB912AB0014974A /* GameplayScene.swift */,
+				29DB6CD61EBA29A100AAD905 /* MainMenuScene.swift */,
 			);
-			name = SceneClases;
+			name = "Scene Clases";
+			sourceTree = "<group>";
+		};
+		29DB6CD81EBA2F0200AAD905 /* Game Manager */ = {
+			isa = PBXGroup;
+			children = (
+				29DB6CD91EBA2F1800AAD905 /* GameManager.swift */,
+			);
+			name = "Game Manager";
 			sourceTree = "<group>";
 		};
 		29FDABC51EB92C4700CF1B03 /* Bird Class */ = {
@@ -394,6 +411,7 @@
 				29A1F7391EB910740014974A /* Fly.mp3 in Resources */,
 				29A1F72D1EB910310014974A /* Red 1.png in Resources */,
 				29A1F73A1EB910740014974A /* Score.mp3 in Resources */,
+				29DB6CD51EBA297200AAD905 /* MainMenuScene.sks in Resources */,
 				29A1F72E1EB910310014974A /* Red 2.png in Resources */,
 				29A1F7251EB910250014974A /* Green 1.png in Resources */,
 				29A1F7201EB910140014974A /* Blue 4.png in Resources */,
@@ -431,8 +449,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29DB6CD71EBA29A100AAD905 /* MainMenuScene.swift in Sources */,
 				29A1F7411EB912AB0014974A /* GameplayScene.swift in Sources */,
 				29A1F6EA1EB90F760014974A /* GameViewController.swift in Sources */,
+				29DB6CDA1EBA2F1800AAD905 /* GameManager.swift in Sources */,
 				294D63171EB9CD57005FAFF9 /* Random.swift in Sources */,
 				29FDABC71EB92C5A00CF1B03 /* Bird.swift in Sources */,
 				29A1F6E21EB90F760014974A /* AppDelegate.swift in Sources */,

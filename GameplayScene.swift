@@ -27,7 +27,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func createBird(){
-        bird = Bird(imageNamed: "Blue 1")
+        bird = Bird(imageNamed: "\(GameManager.instance.getBird()) 1")
         bird.initialize()
         bird.position = CGPoint(x: -50, y: 0)
         self.addChild(bird)
@@ -64,8 +64,9 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
                 initialize()
             }
             if atPoint(location).name == "Quit" {
-                // go back to main menu
-            }
+                let mainMenu = MainMenuScene(fileNamed: "MainMenuScene")
+                mainMenu?.scaleMode = .aspectFill
+                self.view?.presentScene(mainMenu!, transition: SKTransition.crossFade(withDuration: TimeInterval(0.5)))            }
         }
         
     }
@@ -256,6 +257,11 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
     
     func birdDied() {
         
+        let highscore = GameManager.instance.getHighscore()
+        if score > highscore {
+            GameManager.instance.setHighscore(highscore: score)
+        }
+        
         self.removeAction(forKey: "Spawn")
         
         for child in children {
@@ -265,6 +271,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
         }
         
         isAlive = false
+        bird.texture = bird.diedTexture
         
         let retry = SKSpriteNode(imageNamed: "Retry")
         let quit = SKSpriteNode(imageNamed: "Quit")
@@ -281,7 +288,7 @@ class GameplayScene: SKScene, SKPhysicsContactDelegate {
         quit.zPosition = 7
         quit.setScale(0)
         
-        let scaleUp = SKAction.scale(to: 1, duration: TimeInterval(0.5))
+        let scaleUp = SKAction.scale(to: 1, duration: TimeInterval(0.2))
         
         retry.run(scaleUp)
         quit.run(scaleUp)
