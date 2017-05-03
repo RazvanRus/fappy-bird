@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		294D63171EB9CD57005FAFF9 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294D63161EB9CD57005FAFF9 /* Random.swift */; };
 		29A1F6E21EB90F760014974A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A1F6E11EB90F760014974A /* AppDelegate.swift */; };
 		29A1F6E61EB90F760014974A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 29A1F6E51EB90F760014974A /* Actions.sks */; };
 		29A1F6EA1EB90F760014974A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A1F6E91EB90F760014974A /* GameViewController.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		294D63161EB9CD57005FAFF9 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		29A1F6DE1EB90F760014974A /* flapping bird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "flapping bird.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A1F6E11EB90F760014974A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29A1F6E51EB90F760014974A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -114,6 +116,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		294D63151EB9CD3F005FAFF9 /* Random Class */ = {
+			isa = PBXGroup;
+			children = (
+				294D63161EB9CD57005FAFF9 /* Random.swift */,
+			);
+			name = "Random Class";
+			sourceTree = "<group>";
+		};
 		29A1F6D51EB90F760014974A = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +253,7 @@
 		29A1F73C1EB911F10014974A /* Clases */ = {
 			isa = PBXGroup;
 			children = (
+				294D63151EB9CD3F005FAFF9 /* Random Class */,
 				29FDABC51EB92C4700CF1B03 /* Bird Class */,
 				29A1F73F1EB912900014974A /* SceneClases */,
 			);
@@ -422,6 +433,7 @@
 			files = (
 				29A1F7411EB912AB0014974A /* GameplayScene.swift in Sources */,
 				29A1F6EA1EB90F760014974A /* GameViewController.swift in Sources */,
+				294D63171EB9CD57005FAFF9 /* Random.swift in Sources */,
 				29FDABC71EB92C5A00CF1B03 /* Bird.swift in Sources */,
 				29A1F6E21EB90F760014974A /* AppDelegate.swift in Sources */,
 			);

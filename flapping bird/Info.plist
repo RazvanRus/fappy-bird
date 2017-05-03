@@ -36,5 +36,9 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>04b_19.ttf</string>
+	</array>
 </dict>
 </plist>
